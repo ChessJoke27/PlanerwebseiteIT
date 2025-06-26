@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Planer{% endblock %}</title>
+</head>
+<body>
+<nav>
+    <a href="{{ url_for('index') }}">Home</a> |
+    <a href="{{ url_for('tickets') }}">Tickets</a> |
+    <a href="{{ url_for('calendar_view') }}">Kalender</a> |
+    <a href="{{ url_for('inventory') }}">Inventar</a> |
+    {% if session.get('user_id') %}
+    <a href="{{ url_for('logout') }}">Logout</a>
+    {% else %}
+    <a href="{{ url_for('login') }}">Login</a> |
+    <a href="{{ url_for('register') }}">Registrieren</a>
+    {% endif %}
+</nav>
+<hr>
+{% block content %}{% endblock %}
+</body>
+</html>
