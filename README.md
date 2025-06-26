@@ -14,4 +14,4 @@ Dies ist ein einfaches Grundgerüst für eine persönliche Planer-Webseite. Die 
 python app.py
 ```
 
-Beim ersten Start wird automatisch ein Benutzer `admin` angelegt. Nach dem Login können die vorbereiteten Seiten für Tickets, Kalender und Inventar aufgerufen werden.
+Beim ersten Start wird automatisch ein Benutzer `admin` angelegt. Weitere Nutzer können über die Registrierungsseite erstellt werden. Nach dem Login können die vorbereiteten Seiten für Tickets, Kalender und Inventar aufgerufen werden.
