@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Kalender{% endblock %}
+{% block content %}
+<h1>Kalender</h1>
+<ul>
+{% for event in events %}
+    <li>{{ event.date }} - {{ event.title }}</li>
+{% else %}
+    <li>Keine Termine vorhanden.</li>
+{% endfor %}
+</ul>
+{% endblock %}
