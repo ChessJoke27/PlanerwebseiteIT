@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Inventar{% endblock %}
+{% block content %}
+<h1>Artikel-Inventar</h1>
+<ul>
+{% for item in items %}
+    <li>{{ item.name }}: {{ item.quantity }}</li>
+{% else %}
+    <li>Keine Artikel vorhanden.</li>
+{% endfor %}
+</ul>
+{% endblock %}
